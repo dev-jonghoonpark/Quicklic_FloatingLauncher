@@ -1,0 +1,96 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="quicklic.floating.api"
+    android:versionCode="5"
+    android:versionName="2.0" >
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="quicklic.quicklic.servicecontrol.StartService"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Transparent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="quicklic.quicklic.servicecontrol.FinishService"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Transparent" >
+        </activity>
+        <activity
+            android:name="quicklic.quicklic.servicecontrol.StartQuicklicMainService"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Transparent" >
+        </activity>
+        <activity
+            android:name="quicklic.quicklic.favorite.ApkListActivity"
+            android:configChanges="orientation"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="quicklic.quicklic.util.DeviceAdminActivity"
+            android:theme="@style/Theme.Transparent" >
+        </activity>
+
+        <service
+            android:name="quicklic.quicklic.main.QuicklicMainService"
+            android:configChanges="orientation"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="quicklic.quicklic.favorite.QuicklicFavoriteService"
+            android:configChanges="orientation"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="quicklic.quicklic.hardware.QuicklicHardwareService"
+            android:configChanges="orientation"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="quicklic.floating.api.FloatingService"
+            android:configChanges="orientation"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="quicklic.quicklic.keyboard.QuicklicKeyBoardService"
+            android:configChanges="orientation"
+            android:exported="false" >
+        </service>
+
+        <receiver
+            android:name="quicklic.quicklic.util.DeviceAdmin"
+            android:description="@string/hardware_device_admin_description"
+            android:label="@string/hardware_device_admin_label"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

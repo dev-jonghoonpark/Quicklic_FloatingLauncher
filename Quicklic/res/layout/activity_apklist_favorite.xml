@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/favorite_main_RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#aa00B4CC" >
+
+    <ListView
+        android:id="@+id/favorite_app_ListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/favorite_button_LinearLayout"
+        android:layout_margin="2dp"
+        android:background="#ffffff"
+        android:divider="#00B4CC"
+        android:dividerHeight="2dp" />
+
+    <LinearLayout
+        android:id="@id/favorite_button_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="#ff008C9E"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/favorite_user_Button"
+            style="@android:attr/buttonBarButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="#ffffffff"
+            android:text="@string/favorite_user"
+            android:textColor="#ff008C9E"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/favorite_system_Button"
+            style="@android:attr/buttonBarButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="#ff008C9E"
+            android:text="@string/favorite_system"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

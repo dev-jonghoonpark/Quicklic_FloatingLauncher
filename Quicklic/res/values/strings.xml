@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- System -->
+    <string name="app_name">Quicklic</string>
+    <string name="hello_quicklic">Quicklic 서비스를 시작합니다.</string>
+    <string name="stop_quicklic">서비스가 실행중입니다. 누르시면 종료됩니다.</string>
+    <string name="quit_quicklic">Quicklic 서비스를 종료합니다.</string>
+    <string name="err_limited_item_count">마지막 페이지에 추가됩니다.</string>
+
+    <!-- Quicklic -->
+    <string name="quicklic_magnet_mode">자석 모드</string>
+    <string name="quicklic_floating_mode">두둥실 모드</string>
+
+    <!-- Favorite -->
+    <string name="favorite_loading">불러오는 중 …</string>
+    <string name="favorite_enable_delete">앱을 삭제할 수 있습니다.</string>
+    <string name="favorite_disable_delete">앱을 추가할 수 있습니다.</string>
+    <string name="favorite_run_no">실행할 수 없는 앱입니다.</string>
+    <string name="favorite_system">시스템</string>
+    <string name="favorite_user">사용자</string>
+    <string name="favorite_duplication_warning">이미 추가 된 앱입니다.</string>
+
+    <!-- Keyboard -->
+    <string name="keyboard_move_finish">마지막 앱입니다.</string>
+    <string name="keyboard_move_first">처음 앱입니다.</string>
+    <string name="keyboard_move_no">실행중인 앱이 없습니다.</string>
+    <string name="keyboard_run_no">실행할 수 없는 앱입니다. 한번더 눌러주세요.</string>
+    <string name="keyboard_except_list">.*contacts.*|.*skt.prod.*|.*.phone.*|.*quicklic.*</string>
+
+    <!-- Hardware -->
+    <string name="hardware_volume_max">최대 음량입니다.</string>
+    <string name="hardware_volume_min">최소 음량입니다.</string>
+    <string name="hardware_device_admin_active">기기관리자가 활성화 되었습니다.</string>
+    <string name="hardware_device_admin_deactive">기기관리자가 비활성화 되었습니다.</string>
+    <string name="hardware_device_admin_label">Quicklic ( 퀵클릭 )</string>
+    <string name="hardware_device_admin_description">Android 기기 관리자가 화면 잠금을 하도록 허용</string>
+
+</resources>
