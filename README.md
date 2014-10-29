@@ -1,4 +1,4 @@
-ducking-octo-archer
+Quicklic_FloatingLauncher
 ===================
 
 Android Floating Launcher using WindowManager
