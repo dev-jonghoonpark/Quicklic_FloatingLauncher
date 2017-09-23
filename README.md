@@ -34,6 +34,8 @@
 4. 멀티테스크 기능  
 ![Quicklic](http://i.imgur.com/kVciy7Q.png)  
 
+[데모 영상 링크](https://www.youtube.com/watch?v=N41w3KEkql8&feature=youtu.be)
+
 ## 그래서, 하고 싶은 말은...?
 
 이 프로젝트는 2학년때(2014년) 처음으로 제대로 진행 된 프로젝트를 진행 된 프로젝트 입니다.  
